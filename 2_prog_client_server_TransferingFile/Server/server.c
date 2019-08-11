@@ -64,8 +64,8 @@ else
     //data exchange---in this program it will only receive 1 line of message
     char client_response[256];
 
-    printf("\nClient message was received successfully!");
-
+    printf("\nClient message was received successfully!\n");
+    int i=1;
     while(1){
         //receiving the message
         recv(client_socket,&client_response,sizeof(client_response),0);
@@ -74,10 +74,9 @@ else
             break;
         }
         //Display the message
-        printf("\nThe Client says:\n%s\n",client_response);
+        printf("%s",client_response);
         //flushing the buffer
         client_response[0]='\0';
-        break;
     }
 }
 

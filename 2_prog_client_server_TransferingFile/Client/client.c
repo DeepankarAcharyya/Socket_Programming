@@ -46,7 +46,7 @@ if (connect_value<0){
 else{
     printf("\n Connected to the server Successfully!\n");
 }
-
+    
 //file part
 //opening the file
 FILE* input_file=fopen("abc.txt","r");
@@ -55,12 +55,12 @@ if (input_file==NULL){
     printf("\nError opening the file!\n");
 }
 else{
-    char file_content[50];
+    char file_content[200];
 //loop
 while(!feof(input_file)){
 
 //reading the content of the file line by line
-fscanf(input_file,"%[^\n]s",file_content);
+fgets(file_content,200,input_file);
 
 //sending the file content to the server
 send(socket_client,file_content,strlen(file_content)+1,0);
