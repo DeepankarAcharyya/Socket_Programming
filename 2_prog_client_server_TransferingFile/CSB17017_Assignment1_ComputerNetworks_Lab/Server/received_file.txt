@@ -1,0 +1,19 @@
+0////////////////////////////////////Start of file\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+1------------------------This file is from the client side.-----------------------------
+2***************************************************************************************
+3A	B	C	D
+4E	F	G	H
+5I	J	K	L
+6M	N	O	P
+7Q	R	S	T
+8U	V	W	X
+9Y	Z
+10***************************************************************************************
+11“My name is Sherlock Holmes. It is my business to know what other people don’t know.”
+12“I trust that age doth not wither nor custom stale my infinite variety.”
+13“Never trust to general impressions, my boy, but concentrate yourself upon details.”
+14“Education never ends, Watson. It is a series of lessons with the greatest for the last.”
+15“Mediocrity knows nothing higher than itself; but talent instantly recognizes genius.”
+16“The chief proof of man’s real greatness lies in his perception of his own smallness.”
+17---------------------------------------------------------------------------------------
+18////////////////////////////////////End of file\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

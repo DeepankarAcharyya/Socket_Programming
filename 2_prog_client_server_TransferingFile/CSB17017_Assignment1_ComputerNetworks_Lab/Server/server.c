@@ -86,7 +86,7 @@ else
             break;
         }
         //Display the message
-        //printf("\n CLIENT:  %s",client_response);
+        printf("\n CLIENT:  %s",client_response);
         fprintf(output_file,"%s",client_response);
     }
     fclose(output_file);
