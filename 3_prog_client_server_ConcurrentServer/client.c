@@ -60,7 +60,7 @@ else{
     bzero(string,sizeof(string));
     recv(socket_client,&string,sizeof(string),0);    
     //printing out the received string
-    printf("\nReversed String:\n",string);
+    printf("\nReversed String:%s\n",string);
 }
 //Close the socket
 close(socket_client);
