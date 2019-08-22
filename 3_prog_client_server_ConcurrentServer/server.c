@@ -92,6 +92,7 @@ int main(int argc, char const *argv[]){
                 printf("\nServer job completed!\n");
                 exit(0);
             }
+           close(client_socket);
         }
     }
     close(socket_server);//Close the socket
