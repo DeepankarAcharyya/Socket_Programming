@@ -63,7 +63,6 @@ int main(int argc, char const *argv[]){
     }
     else
         printf("\nSocket Binded Successfully!\n");
-
     //Listening for incoming requests
     listen(socket_server,5);
     while(1){
