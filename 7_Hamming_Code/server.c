@@ -11,7 +11,14 @@
 //function for producing the parity bit
 int parity(char input[],int pos){
     //odd parity scheme is to be followed
-    
+    int i,count=0;
+    for(i=0;i<strlen(input);i++){
+        if(input[i]=='1')
+            count++;
+    }
+    if(count%2==0)
+        return 1;
+    else return 0;
 }
 
 //function for generating pseudo random number
@@ -43,7 +50,7 @@ for(i=0;i<12;i++){
         hc[pos]=(char)parity_bit;
         c1=pos;
     }
-
+    
 
 }
 //taking input of the error rate
