@@ -29,7 +29,17 @@ int authorised( char *user, char *password){
     }
     return -1; //user not found
 }
-
+//functions required
+/*
+-the request structure-->must be universal
+-the menu display option
+-the user count
+-the menu will consist of -Buying Options
+                          -Selling Opions
+                          -View Orders
+                          -Buy 
+                          -Sell
+*/
 
 //main function
 int main(int argc,char** argv){
