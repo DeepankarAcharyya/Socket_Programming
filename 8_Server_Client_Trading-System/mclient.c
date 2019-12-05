@@ -21,9 +21,17 @@ int main(){
     scanf("%d",&trader_id);
 
     //displaying the menu
+    display_menu();
 
     //taking input
-
+    int choice;
+    switch(choice){
+        case 1: break;
+        case 2: break;
+        case 3: break;
+        case 4: break;
+        case 5: break;
+    }
     //if request based-> filling up the request structure 
     
     //sending the request structure to the server
