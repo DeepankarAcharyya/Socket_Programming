@@ -52,13 +52,22 @@ if (connect_value<0){
     exit(1);
 }
 else{
+
     printf("\n Connected to the server Successfully!\n");
-    //sending the string to the server
-    send(socket_client,string,strlen(string),0);
-    printf("\nSent String:%s\n",string);
-    //receive the string from the server
-    bzero(string,sizeof(string));
-    recv(socket_client,&string,sizeof(string),0);    
+
+    char mssg_buffer[600];
+    while(1){
+        bzero(mssg_buffer,sizeof(mssg_buffer));
+        printf("\nYOU:");
+        scanf("%s",mssg_buffer);
+        //sending the string to the server
+        send(socket_client,mssg_buffer,strlen(mssg_buffer),0);
+        printf("\nSent String\n");
+        //receive the string from the server
+        
+    }
+
+    //recv(socket_client,&string,sizeof(string),0);    
     //printing out the received string
     printf("\nReversed String:%s\n",string);
 }

@@ -9,7 +9,7 @@
         printf("\nSocket Binded Successfully!\n");
 
     //Listening for incoming requests
-    listen(socket_server,5);
+    listen(socket_server,10);
     while(1){
         //accepting the incoming request
         int client_socket=accept(socket_server,NULL,NULL);
@@ -28,12 +28,13 @@
                 close(socket_server);
                 //data exchange---in this program it will only receive 1 line of message
                 char client_string[600];
+                
+                while(1){
                 bzero(client_string,sizeof(client_string));
                 recv(client_socket,client_string,sizeof(client_string),0);
-                reverse_string(client_string);
-                puts(client_string);
-                send(client_socket,client_string,strlen(client_string),0);
-                printf("\nServer job completed!\n");
+                printf("\nID:%s\n",client_string);
+                }
+
                 exit(0);
             }
         }
